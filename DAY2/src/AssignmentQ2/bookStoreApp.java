@@ -36,8 +36,11 @@ create an object of BookStore class and then Test the different functionality of
 
 package AssignmentQ2;
 
-public class AssignmentDay2Q2 {
+public class bookStoreApp {
     public static void main(String[] args) {
+       BookStore bs =new BookStore("Marias BookStore", 3);
+       bs.sell("rich dad poor dad",5);
+        System.out.println(b.displayBookTitle());
 
     }
 }
