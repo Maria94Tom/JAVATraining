@@ -38,9 +38,10 @@ package AssignmentQ2;
 
 public class bookStoreApp {
     public static void main(String[] args) {
-       BookStore bs =new BookStore("Marias BookStore", 3);
-       bs.sell("rich dad poor dad",5);
-        System.out.println(b.displayBookTitle());
+       BookStore bs =new BookStore("Marias BookStore", 10);
+       //bs.sell("C++",9);
+       bs.order("ISBN2",9);
+
 
     }
 }
