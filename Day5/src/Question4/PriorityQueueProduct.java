@@ -1,5 +1,10 @@
 package Question4;
-
+/*
+Create a program to create PriorityQueque to store product information
+Product class : consist of fields: productId, productName, productPrice. Create and store 5 product into
+PriorityQueque
+You need to use Comparator for custom priority (as per productPrice)
+ */
 import java.util.*;
 
 // Product class with productId, productName, and productPrice
@@ -18,7 +23,12 @@ class Product {
     // Override toString method to print product details
     @Override
     public String toString() {
-        return "Product{ID=" + productId + ", Name='" + productName + "', Price=" + productPrice + "}";
+        StringBuilder sb = new StringBuilder();
+        sb.append("Product ID: ").append(productId).append("\n");
+        sb.append("Product Name: ").append(productName).append("\n");
+        sb.append("Product Price: ").append(productPrice).append("\n");
+        return sb.toString();
+       // return "Product{ID=" + productId + ", Name='" + productName + "', Price=" + productPrice + "}";
     }
 }
 
