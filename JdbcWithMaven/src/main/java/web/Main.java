@@ -39,13 +39,16 @@ Test using some sample records of you favourite books
 import repository.Book;
 import service.BookServiceImpl;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("________All Books_______");
         BookServiceImpl bsi=new BookServiceImpl();
-        bsi.addBook(new repository.Book(5,"1234","The Alchemist","Paulo Coelho",100.0));
+        bsi.addBook(new Book(91,"1234","The Alchemist","Paulo Coelho",100.0));
         bsi.deleteBook(2);
-        bsi.updateBook(1,new repository.Book(1,"1234","The Alchemist","Paulo Coelho",100.0));
+        bsi.updateBook(1,new Book(1,"1234","The Alchemist","Paulo Coelho",100.0));
         bsi.getAllBooks().forEach(System.out::println);
         bsi.getBookById(1).forEach(System.out::println);
 
