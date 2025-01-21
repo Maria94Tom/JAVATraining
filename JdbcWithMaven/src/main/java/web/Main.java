@@ -36,6 +36,7 @@ Create book store CRUD application using JDBC
 Test using some sample records of you favourite books
 */
 
+import exceptions.BookNotFoundException;
 import repository.Book;
 import service.BookServiceImpl;
 
@@ -46,12 +47,17 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("________All Books_______");
         BookServiceImpl bsi=new BookServiceImpl();
-        bsi.addBook(new Book(91,"1234","The Alchemist","Paulo Coelho",100.0));
+        bsi.addBook(new Book("1234","The Alchemist","Paulo Coelho",100.0));
         bsi.deleteBook(2);
-        bsi.updateBook(1,new Book(1,"1234","The Alchemist","Paulo Coelho",100.0));
-        bsi.getAllBooks().forEach(System.out::println);
-        bsi.getBookById(1).forEach(System.out::println);
+        bsi.updateBook(1,new Book("23er4543","1234","The Alchemist",100.0));
+            bsi.getAllBooks().forEach(System.out::println);
+        System.out.println("\n\n Book by ID");
+            bsi.getBookById(1).forEach(System.out::println);
+        }
 
 
-    }
-}
+        }
+
+
+
+
