@@ -5,10 +5,13 @@ import exceptions.DAOException;
 import repository.Book;
 import repository.BookDao;
 import repository.BookDaoImp;
+import web.Main;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 public class BookServiceImpl implements BookService {
+    private static final Logger logger = Logger.getLogger(String.valueOf(BookServiceImpl.class));
     private BookDao bookDao=new BookDaoImp();
 
 

@@ -42,16 +42,21 @@ import service.BookServiceImpl;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
+    private static final Logger logger = Logger.getLogger(String.valueOf(Main.class));
     public static void main(String[] args) {
-        System.out.println("________All Books_______");
+       // System.out.println("________All Books_______");
+        logger.info("Book store application");
         BookServiceImpl bsi=new BookServiceImpl();
         bsi.addBook(new Book("1234","The Alchemist","Paulo Coelho",100.0));
         bsi.deleteBook(2);
         bsi.updateBook(1,new Book("23er4543","1234","The Alchemist",100.0));
             bsi.getAllBooks().forEach(System.out::println);
-        System.out.println("\n\n Book by ID");
+        logger.info(" Book by ID");
+        //System.out.println("\n\n Book by ID");
             bsi.getBookById(1).forEach(System.out::println);
         }
 
