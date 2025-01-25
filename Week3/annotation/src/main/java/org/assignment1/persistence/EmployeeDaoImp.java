@@ -1,10 +1,14 @@
 package org.assignment1.persistence;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Repository(value ="dao")
+@Primary
 public class EmployeeDaoImp implements EmployeeDao {
     private static Map<Integer, Employee> empMap = new HashMap<Integer, Employee>();
     private static int counter = 0;
