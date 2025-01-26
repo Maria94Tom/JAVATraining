@@ -1,17 +1,21 @@
 package org.assignment2.persistence;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
-
+@Repository(value = "dao")
+@Profile("jdbc")
 public class EmployeeDaoJdbcImpl implements EmployeeDao {
     private JdbcTemplate jdbcTemplate;
 
@@ -52,9 +56,9 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao {
     }
 
     @Override
-    public int deleteEmployee(int id) {
+    public void deleteEmployee(int id) {
         String sql = "DELETE FROM employees WHERE id = ?";
-        return jdbcTemplate.update(sql,id);
+        jdbcTemplate.update(sql,id);
 
     }
 

@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dea6a9d-b07e-41b7-85ea-6fca60be327e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../javaconfig/src/main/resources/employee.xml" beforeDir="false" />
+    <list default="true" id="9dea6a9d-b07e-41b7-85ea-6fca60be327e" name="Changes" comment="Question2 In progress">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoJdbcImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +93,20 @@
       <option name="presentableId" value="Default" />
       <updated>1737812026245</updated>
     </task>
+    <task id="LOCAL-00001" summary="Question2 In progress">
+      <option name="closed" value="true" />
+      <created>1737886419325</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737886419325</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Question2 In progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question2 In progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

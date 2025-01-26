@@ -7,8 +7,10 @@ import org.assignment2.persistence.EmployeeDaoJdbcImpl;
 import org.assignment2.services.EmployeeService;
 import org.assignment2.services.EmployeeServiceImpl;
 import org.assignment2.services.aspect.MethodLogger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
+import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
@@ -19,6 +21,8 @@ import javax.sql.DataSource;
 @EnableAspectJAutoProxy
 @PropertySource("application.properties")
 public class AppConfig {
+    @Autowired
+    private Environment environment;
     @Value("${spring.datasource.url}")
     private String dbUrl;
 
