@@ -1,0 +1,37 @@
+WARN  | 2025-01-26 15:00:52 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'es': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeDao' defined in org.assignment2.config.AppConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.assignment2.persistence.EmployeeDao]: Factory method 'employeeDao' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in org.assignment2.config.AppConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [${spring.datasource.driver-class-name}]
+WARN  | 2025-01-26 15:03:47 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'es': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeDao' defined in org.assignment2.config.AppConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.assignment2.persistence.EmployeeDao]: Factory method 'employeeDao' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in org.assignment2.config.AppConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [${spring.datasource.driver-class-name}]
+INFO  | 2025-01-26 15:26:46 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@64a4dd8d
+INFO  | 2025-01-26 15:26:46 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 0 ms
+INFO  | 2025-01-26 15:26:46 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 15:26:46 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 15:26:46 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
+INFO  | 2025-01-26 15:29:53 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@40298285
+INFO  | 2025-01-26 15:29:53 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 0 ms
+INFO  | 2025-01-26 15:29:53 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 15:29:53 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 15:29:53 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
+INFO  | 2025-01-26 15:30:41 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@64a4dd8d
+INFO  | 2025-01-26 15:30:41 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 2 ms
+INFO  | 2025-01-26 15:30:41 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 15:30:41 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 15:30:41 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
+INFO  | 2025-01-26 15:37:12 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@41b0ae4c
+INFO  | 2025-01-26 15:37:12 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 0 ms
+INFO  | 2025-01-26 15:37:12 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 15:37:12 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 15:37:12 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
+INFO  | 2025-01-26 15:38:24 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@22367b8
+INFO  | 2025-01-26 15:38:24 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 0 ms
+INFO  | 2025-01-26 15:38:24 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 15:38:24 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 15:38:24 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
+INFO  | 2025-01-26 15:41:29 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@22367b8
+INFO  | 2025-01-26 15:41:29 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 1 ms
+INFO  | 2025-01-26 15:41:29 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: false
+INFO  | 2025-01-26 15:41:29 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 15:41:29 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
+INFO  | 2025-01-26 15:42:46 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@22367b8
+INFO  | 2025-01-26 15:42:46 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 0 ms
+INFO  | 2025-01-26 15:42:46 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: false
+INFO  | 2025-01-26 15:42:46 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 15:42:46 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1

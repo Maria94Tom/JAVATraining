@@ -1,0 +1,15 @@
+WARN  | 2025-01-26 11:18:06 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'methodLogger' defined in file [D:\JAVATraining\Week3\questin2aop\target\classes\org\assignment2\services\aspect\MethodLogger.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+WARN  | 2025-01-26 11:23:47 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'methodLogger' defined in org.assignment2.config.AppConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.assignment2.services.aspect.MethodLogger]: Factory method 'methodLogger' threw exception; nested exception is java.lang.ExceptionInInitializerError
+INFO  | 2025-01-26 11:31:08 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@7689ddef
+INFO  | 2025-01-26 11:31:08 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 1 ms
+INFO  | 2025-01-26 11:31:08 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 11:31:08 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 11:35:22 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@7689ddef
+INFO  | 2025-01-26 11:35:22 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 0 ms
+INFO  | 2025-01-26 11:35:22 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 11:35:22 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@7689ddef
+INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 1 ms
+INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
+INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
