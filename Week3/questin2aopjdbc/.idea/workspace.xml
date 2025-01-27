@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dea6a9d-b07e-41b7-85ea-6fca60be327e" name="Changes" comment="Question2 In progress">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../questin2aopjdbcjavaconfig/src/main/java/org/assignment2/persistence/EmployeeDaoJdbcImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="9dea6a9d-b07e-41b7-85ea-6fca60be327e" name="Changes" comment="Question2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,12 +93,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737886419325</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Question2">
+      <option name="closed" value="true" />
+      <created>1737888606710</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737888606710</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Question2 In progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question2 In progress" />
+    <MESSAGE value="Question2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
