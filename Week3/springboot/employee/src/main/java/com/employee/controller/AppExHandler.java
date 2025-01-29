@@ -11,8 +11,8 @@ public class AppExHandler {
 @ExceptionHandler(EmployeeNotFoundException.class)
 public ResponseEntity<ErrorDetails> handle404   (EmployeeNotFoundException ex) {
     ErrorDetails errorDetails = new ErrorDetails();
- //  errorDetails.setMessage(ex.getMessage());
-  //  errorDetails.setStatus(404);
+  //errorDetails.setMessage(ex.getMessage());
+   // errorDetails.setStatus(404);
     return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorDetails);
 }
 
