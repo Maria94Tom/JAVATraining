@@ -24,15 +24,15 @@ public class Main {
         }
 
         // Add a new employee
-//        Employee newEmployee = new Employee(3, "John", "HR", 8000000);
-//        employeeService.addEmployee(newEmployee);
-//        System.out.println("Added Employee: " + newEmployee.getName());
-//
-//        // Fetch all employees again to verify the addition
-//        System.out.println("Updated Employee List:");
-//        for (Employee emp : employeeService.getAllEmployees()) {
-//            System.out.println(emp.getName());
-//        }
+        Employee newEmployee = new Employee(3, "John", "HR", 8000000);
+        employeeService.addEmployee(newEmployee);
+        System.out.println("Added Employee: " + newEmployee.getName());
+
+        // Fetch all employees again to verify the addition
+        System.out.println("Updated Employee List:");
+        for (Employee emp : employeeService.getAllEmployees()) {
+            System.out.println(emp.getName());
+        }
 
 
     }

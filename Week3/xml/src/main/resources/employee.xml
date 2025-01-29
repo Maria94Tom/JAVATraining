@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-    <bean id="es" class="org.assignment1.services.EmployeeServiceImpl">
+    <bean id="es" class="org.assignment1.services.EmployeeServiceImpl" autowire="byType">
        <property name="dao" ref="dao" />
 
     </bean>

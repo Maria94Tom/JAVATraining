@@ -25,7 +25,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee addEmployee(Employee employee) {
-        return null;
+
+        return dao.addEmployee(employee);
     }
 
     @Loggable
@@ -41,6 +42,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee getEmployeeById(int id) {
-        return null;
+
+        return dao.getEmployeeById(id);
     }
 }

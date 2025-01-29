@@ -19,21 +19,24 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee addEmployee(Employee employee) {
-        return null;
+        return dao.addEmployee(employee);
     }
 
     @Override
     public void deleteEmployee(int id) {
+        dao.deleteEmployee(id);
 
     }
 
     @Override
     public void updateEmployee(int id, Employee employee) {
+        dao.updateEmployee(id, employee);
 
     }
 
     @Override
     public Employee getEmployeeById(int id) {
-        return null;
+
+        return dao.getEmployeeById(id);
     }
 }

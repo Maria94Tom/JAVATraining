@@ -13,3 +13,8 @@ INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:29) 
 INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: null
 INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
 INFO  | 2025-01-26 11:36:56 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1
+INFO  | 2025-01-27 21:05:09 | [main] aspect.MethodLogger (MethodLogger.java:25) - Executing method: deleteEmployee with arguments: [Ljava.lang.Object;@2b46a8c1
+INFO  | 2025-01-27 21:05:09 | [main] aspect.MethodLogger (MethodLogger.java:29) - Execution time: 1 ms
+INFO  | 2025-01-27 21:05:09 | [main] aspect.MethodLogger (MethodLogger.java:30) - Method deleteEmployee returned: false
+INFO  | 2025-01-27 21:05:09 | [main] aspect.MethodLogger (MethodLogger.java:34) - Deleted Employee with ID: 1
+INFO  | 2025-01-27 21:05:09 | [main] aspect.MethodLogger (MethodLogger.java:35) - Deleted Employee: 1

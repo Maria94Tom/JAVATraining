@@ -12,6 +12,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+
 @Component
 @Aspect
 public class MethodLogger {
@@ -22,7 +24,7 @@ public class MethodLogger {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         String methodName = signature.getName();
         Object[] args = joinPoint.getArgs();
-        logger.info("Executing method: " + methodName + " with arguments: " + args);
+        logger.info("Executing method: " + methodName + " with arguments: " + Arrays.toString(args));
         long startTime = System.currentTimeMillis();
         Object result = joinPoint.proceed();
         long endTime = System.currentTimeMillis();

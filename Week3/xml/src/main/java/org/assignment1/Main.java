@@ -45,19 +45,19 @@ public class Main {
         }
 
        //  Add a new employee
-//       employeeService.addEmployee(new Employee(4, "John Doe", "IT", 50000.0));
-//        System.out.println("Added Employee:" + employeeService.getEmployeeById(4).getName());
-//        System.out.println("Updated Employee list:");
-//        for (Employee emp : employeeService.getAllEmployees()) {
-//            System.out.println(emp.getName());
-//
-//        }
+       employeeService.addEmployee(new Employee(3, "John Doe", "IT", 50000.0));
+        System.out.println("Added Employee:" + employeeService.getEmployeeById(3).getName());
+        System.out.println("Updated Employee list:");
+        for (Employee emp : employeeService.getAllEmployees()) {
+            System.out.println(emp.getName());
+
+        }
         // Delete an employee
-//        employeeService.deleteEmployee(3);
-//        System.out.println("Updated Employee list:");
-//        for (Employee emp : employeeService.getAllEmployees()) {
-//            System.out.println(emp.getName());
-//        }
+        employeeService.deleteEmployee(3);
+        System.out.println("Updated Employee list:");
+        for (Employee emp : employeeService.getAllEmployees()) {
+            System.out.println(emp.getName());
+        }
 
     }
 }
