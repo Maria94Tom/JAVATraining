@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e0c0a7b-88a9-4aba-96a6-2757d41b3235" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/controller/AppExHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/controller/AppExHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/controller/ErrorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/dto/ErrorDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/repo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/java/com/employee/repo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Week3/springboot/employee/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Maria94Tom"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Maria94Tom/JAVATraining.git",
+    "accountId": "6238ff46-f3a5-4c2b-93c6-2964d34bffb8"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2sLFCZQ8T06Mc0DhKEXvM6X4LoJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/JAVATraining/LabExam2/src/main/java/org/labexam"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e0c0a7b-88a9-4aba-96a6-2757d41b3235" name="Changes" comment="" />
+      <created>1738226820293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738226820293</updated>
+    </task>
+    <servers />
+  </component>
+</project>
