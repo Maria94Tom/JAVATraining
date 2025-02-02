@@ -12,6 +12,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Range;
 
+import java.math.BigDecimal;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,15 +27,14 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private int id;
+
     @NotEmpty(message = "{employee.name.absent}")
- //   @Column(name = "name")
     private String name;
- //   @Column(name = "dept")
     private String dept;
     @NotNull(message = "{employee.salary.absent}")
     @Range(min = 10, max = 100000, message = "{employee.salary.invalid}")
   //  @Column(name = "salary")
-    private int salary;
+    private BigDecimal salary;
 
 //    public Employee(int id, String name, String dept, int salary) {
 //        this.id = id;
@@ -42,7 +43,7 @@ public class Employee {
 //        this.salary = salary;
 //    }
 
-    public Employee(String name, String dept, int salary) {
+    public Employee(String name, String dept, BigDecimal salary) {
         this.name = name;
         this.dept = dept;
         this.salary = salary;

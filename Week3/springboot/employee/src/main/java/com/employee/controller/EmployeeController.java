@@ -30,7 +30,7 @@ public class EmployeeController {
     }
 
     @PostMapping("employees")
-    public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee){
+    public ResponseEntity<Employee> addEmployee(@RequestBody @Valid Employee employee){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.addEmployee(employee));
     }
 
@@ -40,7 +40,9 @@ public class EmployeeController {
     }
     @DeleteMapping("employees/{id}")
     public ResponseEntity<Employee> deleteEmployee(@PathVariable int id){
+        service.deleteEmployee(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+
     }
 
 
