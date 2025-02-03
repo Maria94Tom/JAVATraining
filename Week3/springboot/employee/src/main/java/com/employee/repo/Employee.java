@@ -1,6 +1,7 @@
 package com.employee.repo;
 
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -23,6 +24,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "employees") //optional
+
 public class Employee {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)

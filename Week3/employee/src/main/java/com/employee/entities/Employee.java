@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 
 
 @Data
@@ -20,14 +21,13 @@ public class Employee {
     private int id;
     private String name;
     private String dept;
-    private int salary;
+    private BigDecimal salary;
 
-//    public Employee(int id, String name, String dept, int salary) {
-//        this.id = id;
-//        this.name = name;
-//        this.dept = dept;
-//        this.salary = salary;
-//    }
+    public Employee( String name, String dept, BigDecimal salary) {
+        this.name = name;
+        this.dept = dept;
+        this.salary = salary;
+    }
 
 
 }

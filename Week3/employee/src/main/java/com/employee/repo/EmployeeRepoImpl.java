@@ -15,7 +15,7 @@ import java.util.Map;
         private static int counter = 0;
         static {
             empMap.put(++counter,
-                    new Employee(counter, "Raj", "IT" ,600000));
+                    new Employee(counter, "Raj", "IT" ,60000));
             empMap.put(++counter, new Employee(counter, "Ekta", "IT" ,500000));
         }
 

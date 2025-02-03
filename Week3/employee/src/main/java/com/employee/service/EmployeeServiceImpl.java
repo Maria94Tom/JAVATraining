@@ -30,14 +30,18 @@ import java.util.List;
             return dao.addEmployee(employee);
         }
 
-       // @Loggable
+
         @Override
         public void deleteEmployee(int id) {
+            dao.deleteEmployee(id);
 
         }
 
         @Override
         public void updateEmployee(int id, Employee employee) {
+
+            dao.updateEmployee(id, employee);
+            
 
         }
 

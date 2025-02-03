@@ -22,7 +22,7 @@ public EmployeeController(EmployeeService employeeService) {
 public List<Employee> getAllEmployees() {
     return employeeService.getAllEmployees();
 }
-/*
+
 @GetMapping(path="employees/{id}")
 public Employee getEmployeeById(int id) {
     return employeeService.getEmployeeById(id);
@@ -43,5 +43,5 @@ public void updateEmployee(int id, Employee employee) {
 public void deleteEmployee(int id) {
     employeeService.deleteEmployee(id);
 }
-*/
+
 }
