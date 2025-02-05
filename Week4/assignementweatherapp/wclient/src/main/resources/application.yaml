@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: wclient
+server:
+    port: 8085
+    servlet:
+        context-path: /wclient
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka
+
+
