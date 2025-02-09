@@ -5,7 +5,6 @@ import exceptions.DAOException;
 import repository.Book;
 import repository.BookDao;
 import repository.BookDaoImp;
-import web.Main;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -50,7 +49,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void updateBook(int id, Book book) {
+    public boolean updateBook(int id, Book book) {
         try{
             bookDao.updateBook(id,book);
         }
@@ -59,6 +58,7 @@ public class BookServiceImpl implements BookService {
         }
 
 
+        return updateBook(id, book);
     }
 
     @Override
