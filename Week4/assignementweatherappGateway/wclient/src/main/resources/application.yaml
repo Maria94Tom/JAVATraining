@@ -2,8 +2,13 @@ spring:
     application:
         name: wclient
     cloud:
-      discovery:
-        enabled: true
+      openfeign:
+        circuitbreaker:
+          enabled: true
+
+#    cloud:
+#      discovery:
+#        enabled: true
 server:
     port: 8085
 
@@ -15,5 +20,42 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-size: 10
+        permitted-number-of-calls-in-half-open-state: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        wait-duration-in-half-open-state: 5s
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+  endpoint:
+    health:
+      enabled: true
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
+
+
+
+
 
 
