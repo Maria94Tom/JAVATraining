@@ -1,8 +1,8 @@
-spring:
-    application:
-        name: wservices
 server:
-    port: 8082
+  port: 8083
+spring:
+  application:
+    name: wservice
 eureka:
   instance:
     prefer-ip-address: true
@@ -10,25 +10,13 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
-resilience4j:
-  circuitbreaker:
-    configs:
-      default:
-        sliding-window-size: 10
-        permitted-number-of-calls-in-half-open-state: 2
-        automatic-transition-from-open-to-half-open-enabled: true
-        failure-rate-threshold: 50
-        wait-duration-in-open-state: 10s
-        wait-duration-in-half-open-state: 5s
-        #The wait-duration-in-open-state is the amount of time a circuit
-        #breaker remains open before switching to a half-open state
+      defaultZone: http://localhost:8761/eureka/
+
 
 management:
   tracing:
     sampling:
       probability: 1
-
   endpoints:
     web:
       exposure:
@@ -39,6 +27,8 @@ management:
   info:
     env:
       enabled: true
+
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
