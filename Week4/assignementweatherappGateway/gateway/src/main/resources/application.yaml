@@ -3,11 +3,11 @@ server:
 spring:
   application:
     name: gateway
-  cloud:
-    gateway:
-     discovery:
-       locator:
-        enabled: true
+#  cloud:
+#    gateway:
+#     discovery:
+#       locator:
+#        enabled: true
 #        lowercase-service-id: true
 
 eureka:
@@ -29,8 +29,13 @@ resilience4j:
         wait-duration-in-open-state: 10s
         wait-duration-in-half-open-state: 5s
 management:
+  tracing:
+    sampling:
+      probability: 1.0
+
   endpoints:
     web:
+      base-path: /actuator
       exposure:
         include: "*"
   health:
@@ -39,8 +44,15 @@ management:
     livenessstate:
       enabled: true
   endpoint:
+    prometheus:
+      enabled: true
+    metrics:
+      enabled: true
     gateway:
       enabled: true
     health:
       probes:
         enabled: true
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"

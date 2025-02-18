@@ -17,6 +17,7 @@ management:
       probability: 1.0
   endpoints:
     web:
+      base-path: /actuator
       exposure:
         include: "*"
   health:
@@ -25,6 +26,10 @@ management:
     readinessstate:
       enabled: true
   endpoint:
+    prometheus:
+      enabled: true
+    metrics:
+      enabled: true
     health:
       enabled: true
 

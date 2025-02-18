@@ -19,9 +19,14 @@ management:
       probability: 1
   endpoints:
     web:
+      base-path: /actuator
       exposure:
         include: "*"
   endpoint:
+    prometheus:
+      enabled: true
+    metrics:
+      enabled: true
     shutdown:
       enabled: true
   info:
