@@ -1,4 +1,4 @@
-package com.koerber.bookapp.exception;
+package com.koerber.journalapp.exception;
 
 public class ResurceNotFoundException extends RuntimeException {
 public ResurceNotFoundException(String message) {
