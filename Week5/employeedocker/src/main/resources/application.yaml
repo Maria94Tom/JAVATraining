@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: employee
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+endpoint:
+  health:
+    probes:
+      enabled: true
+health:
+  readinessstate:
+    enabled: true
+  livenessstate:
+    enabled: true
